@@ -45,7 +45,17 @@ button {
 
 .discord {
   justify-content: center;
-  margin-top: 200px;
   display: flex;
   color: #fff;
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+}
+
+.discord-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 }
