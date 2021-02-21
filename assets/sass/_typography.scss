@@ -4,11 +4,15 @@
 }
 
 .content p {
-  width: 900px;
-  margin: 30px auto;
-  text-align: justify;
+  margin: 4px;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 732px){
+  .content p {
+    margin: 0 auto;
+  }
 }
 
 .content h2 {
