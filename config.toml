@@ -1,0 +1,6 @@
+baseurl = "/"
+languageCode = "en-gb"
+title = "Dandelion Cotton"
+disableKinds = ["RSS", "taxonomyTerm"]
+[blackfriday]
+   hrefTargetBlank = true

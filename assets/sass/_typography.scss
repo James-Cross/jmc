@@ -1,0 +1,80 @@
+.content {
+  margin-top: 80px;
+  padding-bottom: 200px;
+}
+
+.content p {
+  width: 900px;
+  margin: 30px auto;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.content h2 {
+  width: 900px;
+  margin: 30px auto;
+  text-align: justify;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.head-container {
+  width:100%;
+  height: 90%; 
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    @media screen and (max-width: $break-large) {
+      font-weight: 300;
+    }
+}
+
+.home-title {
+  color: #00A756;
+  font-family: "Akaya-Kanadaka";
+  font-weight: 400;
+  font-size: 90px;
+  margin-top: 100px;
+  // font-weight: 600;
+}
+
+.sub-heading {
+  color: #fff;
+}
+
+h2 {
+  text-align: center; 
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+}
+
+.h7 {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.logo {
+  font-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #00A756;
+}
