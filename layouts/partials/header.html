@@ -1,31 +1,44 @@
-<header>
-  <nav>
-    <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/boss">Boss</a></li>
-        <li><a href="/air">Air</a></li>
-        <li><a href="/other">Other</a></li>
-        <li><a href="/items">Items</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
+<nav>
+  <a href="/"><img class="logo" src="/assets/logo.png" alt="home-logo"></a>
+  <ul class="nav-links">
+    <li>
+      <a href="/air">Air</a>
+    </li>
+    <li>
+        <a href="/boss">Boss</a>
+    </li>
+    <li>
+        <a href="/Other">Other</a>
+    </li>
+    <li>
+        <a href="/items">items</a>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
 
-  <script type="text/javascript">
+<script>
     const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('nav-active');
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+      const navLinks = document.querySelectorAll('.nav-links li');
+  
+      burger.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
+  
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = '';
+          } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
+          }
+          });
+          burger.classList.toggle('toggle');
       });
-    }
-
+  }
   navSlide();
   </script>
-
-</header>
-
