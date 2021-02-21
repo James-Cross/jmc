@@ -53,6 +53,12 @@ button {
   bottom: 20%;
 }
 
+@media screen and (max-width: 732px){
+  .discord {
+    bottom: 10px;
+  }
+}
+
 .discord-page {
   display: flex;
   align-items: center;
