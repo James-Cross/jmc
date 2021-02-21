@@ -7,7 +7,23 @@
   </url>
   
   <url>
+    <loc>/air/</loc>
+  </url>
+  
+  <url>
     <loc>/boss/</loc>
+  </url>
+  
+  <url>
+    <loc>/items/</loc>
+  </url>
+  
+  <url>
+    <loc>/other/</loc>
+  </url>
+  
+  <url>
+    <loc>/rock-drake/</loc>
   </url>
   
 </urlset>

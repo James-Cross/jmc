@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="en-GB" xmlns:fb="http://ogp.me/ns/fb#"><head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="JJ&#39;s Dinos - Items" />
+  <meta property="og:url" content="/items/" />
+  <meta property="og:description" content="List of dinos sold by JJ"/>
+  <meta property="og:type" content="website" />
+  <title>JJ&#39;s Dinos - Items</title>
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-63KHVKMEDW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159471980-2');
+</script>
+
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/sass/main.min.css">
+  
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head><body>
+<nav>
+  <a href="/"><img class="logo" src="/assets/logo.png" alt="home-logo"></a>
+  <ul class="nav-links">
+    <li>
+      <a href="/air">Air</a>
+    </li>
+    <li>
+        <a href="/boss">Boss</a>
+    </li>
+    <li>
+        <a href="/other">Other</a>
+    </li>
+    <li>
+        <a href="/items">items</a>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+
+<script>
+    const navSlide = () => {
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+      const navLinks = document.querySelectorAll('.nav-links li');
+  
+      burger.addEventListener('click', ()=>{
+        nav.classList.toggle('nav-active');
+  
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = '';
+          } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
+          }
+          });
+          burger.classList.toggle('toggle');
+      });
+  }
+  navSlide();
+  </script>
+
+<div class="content">
+  <h1 style="color: #fff;">Items</h1>
+  <div class="items">
+    <div class="item-img">
+
+    </div>
+    <div class="item-text">
+      <p>Managarmr Saddle - 170 to 180 armour. 25 arcs</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="discord-page">
+  <img style="width: 60px; " src="/assets/disc-icon.png" alt="">
+  <p style="top: 50%; color: #fff; font-weight: bold; font-size: 20px;">JJDaDon#6557</p>
+</div>
+
+
+
+</body>
+</html>
